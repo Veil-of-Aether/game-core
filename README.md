@@ -78,7 +78,7 @@ There are lots of ways to contribute:
 
 - Large changes? Please open an issue or proposal first so we can discuss it.
 
-- Follow our CODE_OF_CONDUCT.md
+- Follow our [Code of Conduct](CODE_OF_CONDUCT.md)
 
 - By contributing, you agree that your code will be licensed under the [GNU GPLv3 License](LICENSE)
 
