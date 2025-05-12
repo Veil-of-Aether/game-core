@@ -48,31 +48,30 @@ Together, we can show that great games don't need ads, tracking, DRM, or a corpo
 
 First off, thanks for your interest in The Veil of Aether! Whether you're here to squash bugs, write dialogue, suggest features, or just share wild theories—we appreciate you.
 
-## Ways You Can Help
+### Ways You Can Help
 There are lots of ways to contribute:
 
 - Report bugs: Found a glitch in the matrix (or the Wind Temple)? Open an issue.
 - Suggest features: Got an idea for a sidequest, spell, or secret area? Drop it in the Discussions or open a proposal.
 - Submit code: Programmers are welcome! Fixes, tools, and gameplay enhancements are all fair game.
-- Help with writing: Lore, dialogue, item descriptions—we love great writing and world-building.
 - Playtest and give feedback: Your gameplay notes help us balance, polish, and improve.
 - Spread the word: Share the project, join our Revolt server, or post about it in the Fediverse!
 
-## How to Contribute
+### How to Contribute
 1. Fork the repo
 
-- Create a new branch for your changes:
+2. Create a new branch for your changes:
   ```bash
   git checkout -b feature/someWeirdFeature
   ```
   
-- Make your changes and commit them with clear messages
+3. Make your changes and commit them with clear messages
 
-- Push to your fork and open a pull request
+4. Push to your fork and open a pull request
 
-- Wait for review and we'll get back to you ASAP!
+5. Wait for review and well get back to you ASAP!
 
-## Guidelines
+### Guidelines
 - Keep code clean, readable, and in snake_case.
 
 - Be respectful. This is a chill space for creators and players alike.
@@ -81,7 +80,9 @@ There are lots of ways to contribute:
 
 - Follow our CODE_OF_CONDUCT.md
 
-## Community & Support
+- By submitting code, you agree that your code will be licensed under the GNU GPLv3 License.
+
+### Community & Support
 Need help? Got a cool idea? Join the community:
 
 - Revolt Server: https://rvlt.gg/xa5z1G8d
