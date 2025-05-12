@@ -23,6 +23,8 @@ This isn't just a game—it's a statement.
 
 Join us. Build with us. Shape the world.
 
+## License
+This game is licensed under the [GNU General Public License v3.0](LICENSE). Please adhere to the guidlines outlined here when modifying or redistributing the game.
 
 ## How you can help
 
