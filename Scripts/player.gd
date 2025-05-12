@@ -15,6 +15,7 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 extends CharacterBody3D
+class_name Player
 
 var mouse_sensitivity := 0.001
 var controller_sensitivity := 1.0
