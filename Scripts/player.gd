@@ -30,6 +30,7 @@ var y_limit = -25
 @onready var twist_pivot := $TwistPivotTP
 @onready var pitch_pivot := $TwistPivotTP/PitchPivotTP
 @onready var camera := $TwistPivotTP/PitchPivotTP/CameraTP
+@onready var crosshair := $GUI/Crosshair
 
 func _ready() -> void:
     Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -120,6 +121,7 @@ func switch_camera():
         twist_pivot = $TwistPivotTP
         pitch_pivot = $TwistPivotTP/PitchPivotTP
         camera = $TwistPivotTP/PitchPivotTP/CameraTP
+    crosshair.visible = !is_third_person
     twist_pivot.rotation = twist
     pitch_pivot.rotation = pitch
     camera.make_current()
