@@ -11,7 +11,7 @@ Our mission statement
 
 A free and open-source RPG, powered by passion—not profit.
 
-We’re building a community-driven adventure inspired by classics like The Legend of Zelda, but without the corporate strings. No ads, no shady data collection, no paywalls. Just creativity, collaboration, and code.
+We're building a community-driven adventure inspired by classics like The Legend of Zelda, but without the corporate strings. No ads, no shady data collection, no paywalls. Just creativity, collaboration, and code.
 
 ### What makes us different?
 - 100% Free/Libre and Open Source (GPL code, CC-BY-SA assets)
@@ -19,7 +19,7 @@ We’re building a community-driven adventure inspired by classics like The Lege
 - Active community engagement—from quests to code to music
 - OSS tools we use get credit and donations where possible
 
-This isn’t just a game—it’s a statement.
+This isn't just a game—it's a statement.
 
 Join us. Build with us. Shape the world.
 
@@ -29,20 +29,20 @@ Join us. Build with us. Shape the world.
 This project is powered by passion, free software, and community contributions — and there are many ways *you* can be part of it:
 
 - 📝 Give Feedback  
-Got an idea to improve the game? Found a bug? Head over to our Git repo’s [issues page](https://github.com/Veil-of-Aether/game-core/issues) to file it. We monitor it regularly and appreciate all input!
+Got an idea to improve the game? Found a bug? Head over to our Git repo's [issues page](https://github.com/Veil-of-Aether/game-core/issues) to file it. We monitor it regularly and appreciate all input!
 
 - 🛠️ Contribute Code or Assets  
-Developers, artists, and audio wizards — your skills are welcome! Fork the repo, make your improvements, and send a pull request. We’ll review and credit all contributors properly.
+Developers, artists, and audio wizards — your skills are welcome! Fork the repo, make your improvements, and send a pull request. We'll review and credit all contributors properly.
 
 - 💸 Support Development  
 If you believe in what we're building, you can help cover server costs and support the tools we rely on through donations. A portion goes to upstream projects like Godot, Disroot, and Revolt.
 
 - 📣 Spread the Word  
-Tell your friends, boost us on the Fediverse, share the repo — anything helps! The more people we reach, the more awesome contributors and players we’ll find.
+Tell your friends, boost us on the Fediverse, share the repo — anything helps! The more people we reach, the more awesome contributors and players we'll find.
 
 Please see [Contributuing](#contributing) for more information.
 
-Together, we can show that great games don’t need ads, tracking, DRM, or a corporate logo.
+Together, we can show that great games don't need ads, tracking, DRM, or a corporate logo.
 
 ## Contributing
 
@@ -70,7 +70,7 @@ There are lots of ways to contribute:
 
 - Push to your fork and open a pull request
 
-- Wait for review and we’ll get back to you ASAP!
+- Wait for review and we'll get back to you ASAP!
 
 ## Guidelines
 - Keep code clean, readable, and in snake_case.
