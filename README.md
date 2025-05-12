@@ -80,7 +80,7 @@ There are lots of ways to contribute:
 
 - Follow our CODE_OF_CONDUCT.md
 
-- By submitting code, you agree that your code will be licensed under the GNU GPLv3 License.
+- By contributing, you agree that your code will be licensed under the [GNU GPLv3 License](LICENSE)
 
 ### Community & Support
 Need help? Got a cool idea? Join the community:
