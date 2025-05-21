@@ -11,17 +11,32 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_klylv")
 
-[node name="Label" type="Label" parent="."]
+[node name="TitleLine1" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -428.0
-offset_right = 428.0
+offset_left = -257.0
+offset_right = 257.0
 offset_bottom = 137.0
 grow_horizontal = 2
 theme_override_font_sizes/font_size = 100
-text = "The Veil of Aether"
+text = "The Veil of"
+
+[node name="TitleLine2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.082
+anchor_right = 0.5
+anchor_bottom = 0.082
+offset_left = -327.0
+offset_top = 0.439995
+offset_right = 328.0
+offset_bottom = 273.44
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 200
+text = "Aether"
 
 [node name="StartBtn" type="Button" parent="."]
 layout_mode = 1
@@ -39,7 +54,7 @@ grow_vertical = 2
 theme_override_font_sizes/font_size = 50
 text = "Start"
 
-[node name="QuitBtn" type="Button" parent="."]
+[node name="CreditsBtn" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -53,7 +68,24 @@ offset_bottom = 160.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 50
+text = "Credits"
+
+[node name="QuitBtn" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = 170.0
+offset_right = 100.0
+offset_bottom = 270.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 50
 text = "Quit"
 
 [connection signal="pressed" from="StartBtn" to="." method="_on_start_btn_pressed"]
+[connection signal="pressed" from="CreditsBtn" to="." method="_on_credits_btn_pressed"]
 [connection signal="pressed" from="QuitBtn" to="." method="_on_quit_btn_pressed"]
