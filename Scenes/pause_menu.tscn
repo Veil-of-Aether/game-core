@@ -64,7 +64,7 @@ text = "Settings"
 [node name="QuitBtn" type="Button" parent="GridContainer"]
 layout_mode = 2
 size_flags_vertical = 4
-text = "Quit"
+text = "Quit to title"
 
 [connection signal="pressed" from="GridContainer/ResumeBtn" to="." method="_on_resume_btn_pressed"]
 [connection signal="pressed" from="GridContainer/MapBtn" to="." method="_on_map_btn_pressed"]
