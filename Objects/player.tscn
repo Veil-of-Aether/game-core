@@ -31,7 +31,6 @@ current = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 
 [node name="PitchPivotFP" type="Node3D" parent="TwistPivotFP"]
-transform = Transform3D(1, 0, 0, 0, 0.984808, 0.173648, 0, -0.173648, 0.984808, 0, 0, 0)
 
 [node name="CameraFP" type="Camera3D" parent="TwistPivotFP/PitchPivotFP"]
 
