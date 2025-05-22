@@ -16,76 +16,60 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -257.0
-offset_right = 257.0
+offset_left = -251.5
+offset_right = 251.5
 offset_bottom = 137.0
 grow_horizontal = 2
+size_flags_vertical = 1
 theme_override_font_sizes/font_size = 100
 text = "The Veil of"
+horizontal_alignment = 1
 
 [node name="TitleLine2" type="Label" parent="."]
 layout_mode = 1
-anchors_preset = -1
+anchors_preset = 5
 anchor_left = 0.5
-anchor_top = 0.082
 anchor_right = 0.5
-anchor_bottom = 0.082
-offset_left = -327.0
-offset_top = 0.439995
-offset_right = 328.0
-offset_bottom = 273.44
+offset_left = -327.5
+offset_top = 65.0
+offset_right = 327.5
+offset_bottom = 338.0
 grow_horizontal = 2
+size_flags_vertical = 0
 theme_override_font_sizes/font_size = 200
 text = "Aether"
 
-[node name="StartBtn" type="Button" parent="."]
+[node name="Buttons" type="GridContainer" parent="."]
+custom_minimum_size = Vector2(500, 0)
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -100.0
-offset_top = -50.0
-offset_right = 100.0
-offset_bottom = 50.0
+offset_left = -250.0
+offset_top = -40.0
+offset_right = 250.0
+offset_bottom = 199.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="StartBtn" type="Button" parent="Buttons"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
 theme_override_font_sizes/font_size = 50
 text = "Start"
 
-[node name="CreditsBtn" type="Button" parent="."]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -100.0
-offset_top = 60.0
-offset_right = 100.0
-offset_bottom = 160.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="CreditsBtn" type="Button" parent="Buttons"]
+layout_mode = 2
 theme_override_font_sizes/font_size = 50
 text = "Credits"
 
-[node name="QuitBtn" type="Button" parent="."]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -100.0
-offset_top = 170.0
-offset_right = 100.0
-offset_bottom = 270.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="QuitBtn" type="Button" parent="Buttons"]
+layout_mode = 2
 theme_override_font_sizes/font_size = 50
 text = "Quit"
 
-[connection signal="pressed" from="StartBtn" to="." method="_on_start_btn_pressed"]
-[connection signal="pressed" from="CreditsBtn" to="." method="_on_credits_btn_pressed"]
-[connection signal="pressed" from="QuitBtn" to="." method="_on_quit_btn_pressed"]
+[connection signal="pressed" from="Buttons/StartBtn" to="." method="_on_start_btn_pressed"]
+[connection signal="pressed" from="Buttons/CreditsBtn" to="." method="_on_credits_btn_pressed"]
+[connection signal="pressed" from="Buttons/QuitBtn" to="." method="_on_quit_btn_pressed"]
