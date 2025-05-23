@@ -1,8 +1,8 @@
-#  Code of Conduct
+# Code of Conduct
 
-Welcome to *The Veil of Aether*! Whether you’re slinging code, crafting characters, drawing ancient beasts, or chronicling the history of the world—this is a space where creativity thrives through mutual respect and collaboration.
+Welcome to *The Veil of Aether*! This is a space where creativity thrives through mutual respect and collaboration.
 
-We want everyone, from seasoned adventurers to first-time contributors, to feel safe and valued here. To that end, this Code of Conduct outlines our expectations for behavior and our process for addressing issues.
+We want everyone, from seasoned programmers to first-time contributors, to feel safe and valued here. To that end, this Code of Conduct outlines our expectations for behavior and our process for addressing issues.
 
 ---
 
@@ -54,7 +54,7 @@ All reports will be handled confidentially.
 If you witness or experience behavior that violates this Code of Conduct, **please report it**. You can:
 
 - Email the maintainers at `veil-of-aether@protonmail.com`
-- Send a direct message to a maintainer via our **Revolt server**
+- Send a direct message to a maintainer via our **[Revolt server](https://rvlt.gg/xa5z1G8d)**
 
 Please provide as much detail as you can. We take all concerns seriously.
 
