@@ -1,0 +1,39 @@
+[
+    {
+        "title": "Game design",
+        "entries": [
+            "Luke Moyer",
+            "Jesse Joyal"
+        ]
+    },
+    {
+        "title": "Programming",
+        "entries": [
+            "Luke Moyer"
+        ]
+    },
+    {
+        "title": "Concept Art",
+        "entries": [
+            "Echo Moyer"
+        ]
+    },
+    {
+        "title": "Special thanks",
+        "entries": [
+            { "name": "Free Software Foundation (FSF)", "note": "For advocating user freedom and inspiring a movement" },
+            { "name": "Open Source Initiative (OSI)", "note": "For defining and promoting open source in practical terms" },
+            { "name": "GNU Project", "note": "For creating the GPL and pioneering free software ideals" }, 
+            { "name": "Creative Commons", "note": "For offering accessible licenses that empower creators" }
+        ]
+    },
+    {
+        "title": "OSS Development tools",
+        "entries": [
+            { "name": "Godot", "note": "A great game engine with amazing features" },
+            { "name": "Blender", "note": "An amazing and feature-rich 3D modeling and rendering program" },
+            { "name": "VSCodium", "note": "A great IDE with the telemetry from Visual Studio Code removed" },
+            { "name": "GIMP", "note": "An advanced image manipulation program with an easy-to-use interface" }
+        ]
+    }
+]
