@@ -1,4 +1,4 @@
-# Veil of Aether is a FOSS action-adventure RPG
+# The Veil of Aether is a FOSS action-adventure RPG
 # Copyright (C) 2025  Luke Moyer
 
 # This program is free software: you can redistribute it and/or modify
@@ -55,4 +55,4 @@ func _on_quit_btn_pressed() -> void:
     get_tree().change_scene_to_file("res://Scenes/title_screen.tscn")
 
 func _on_map_btn_pressed() -> void:
-    pass # Replace with function body.
+    $Map.set_visible(true)
