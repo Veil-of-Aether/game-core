@@ -18,23 +18,24 @@ extends Control
 
 var _is_paused := false:
     set = set_paused
-var buttons := []
-var selected_index := 0
+var buttons := [] # array to hold the buttons in the pause menu
 
 func _unhandled_input(event: InputEvent) -> void:
-    if event.is_action_pressed("pause"):
+    if event.is_action_pressed("pause"): # if Escape is pressed
         _is_paused = !_is_paused
     if not _is_paused:
         return
      
-    if event.is_action_pressed("use_button"):
-        get_viewport().gui_get_focus_owner().emit_signal("pressed")
+    if event.is_action_pressed("use_button"): # if Space or Enter is pressed
+        get_viewport().gui_get_focus_owner().emit_signal("pressed") # simulate a press of the selected button
 
 func _notification(what: int) -> void:
+    # automatically pause if the game window loses focus
     if what == MainLoop.NOTIFICATION_APPLICATION_FOCUS_OUT:
         _is_paused = true
 
-func set_paused(value:bool):
+# set all necessary values for pausing the game
+func set_paused(value: bool):
     if _is_paused:
         Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
     else:
@@ -44,15 +45,19 @@ func set_paused(value:bool):
     self.visible = _is_paused
     $GridContainer/ResumeBtn.grab_focus()
 
+# if the 'Resume' button is pressed
 func _on_resume_btn_pressed() -> void:
     _is_paused = false
 
+# if the 'Map' button is pressed
+func _on_map_btn_pressed() -> void:
+    $Map.set_visible(true)
+
+# if the 'Settings' button is pressed
 func _on_settings_btn_pressed() -> void:
     pass # Replace with function body.
 
+# if the 'Quit' button is pressed
 func _on_quit_btn_pressed() -> void:
     get_tree().paused = false
     get_tree().change_scene_to_file("res://Scenes/title_screen.tscn")
-
-func _on_map_btn_pressed() -> void:
-    $Map.set_visible(true)

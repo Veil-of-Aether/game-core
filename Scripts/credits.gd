@@ -3,8 +3,9 @@ extends Control
 @onready var container = $CreditsContainer
 
 func _ready():
-    load_credits("res://Data/credits.json")
+    load_credits("res://Data/credits.json") # file that holds the credits
 
+# load the credits file and ensure it's valid
 func load_credits(path):
     var file = FileAccess.open(path, FileAccess.READ)
     if file == null:
@@ -21,6 +22,7 @@ func load_credits(path):
     else:
         push_error("Credits JSON root is not an array.")
 
+# use labels to display a section in the correct format
 func render_section(titleText, entriesList):
     add_section_header(titleText)
     for entry in entriesList:
@@ -30,6 +32,7 @@ func render_section(titleText, entriesList):
             add_entry_line(entry["name"], entry.get("note", null))
     add_spacer()
 
+# add a normal line to a section
 func add_entry_line(entry_name, note = null):
     var label = Label.new()
     label.text = entry_name
@@ -45,6 +48,7 @@ func add_entry_line(entry_name, note = null):
         note_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
         container.add_child(note_label)
 
+# add a header to the section
 func add_section_header(text):
     var label = Label.new()
     label.text = text
@@ -54,6 +58,7 @@ func add_section_header(text):
     label.add_theme_constant_override("margin_bottom", 4)
     container.add_child(label)
 
+# add some spacing, for use between sections
 func add_spacer():
     var spacer = Control.new()
     spacer.custom_minimum_size = Vector2(0, 20)

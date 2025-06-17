@@ -1,11 +1,11 @@
 extends Control
 
 func _ready() -> void:
+    # give focus to the top button (start)
     $Buttons/StartBtn.grab_focus()
 
 func _unhandled_input(event: InputEvent) -> void:
-    # buttons
-    if event.is_action_pressed("use_button"):
+    if event.is_action_pressed("use_button"): # if Space or Enter is pressed
         get_viewport().gui_get_focus_owner().emit_signal("pressed")
 
 func _on_start_btn_pressed() -> void:

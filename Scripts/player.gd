@@ -27,15 +27,17 @@ var jump_velocity := 5.0
 var is_third_person := true
 var pitch_limit := 30
 var y_limit = -25
+# variables related to the current camera in use
 @onready var twist_pivot := $TwistPivotTP
 @onready var pitch_pivot := $TwistPivotTP/PitchPivotTP
 @onready var camera := $TwistPivotTP/PitchPivotTP/CameraTP
 @onready var crosshair := $GUI/Crosshair
 
 func _ready() -> void:
+    # hide the mouse
     Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
-func _physics_process(delta: float) -> void:  # Fixed method name
+func _physics_process(delta: float) -> void:
     var input_dir := Vector3.ZERO
     
     # Controller stick input
@@ -59,12 +61,12 @@ func _physics_process(delta: float) -> void:  # Fixed method name
     self.velocity.x = direction.x * move_speed
     self.velocity.z = direction.z * move_speed
     
-    if Input.is_action_pressed("sprint"):
+    if Input.is_action_pressed("sprint"): # if Shift is pressed
         self.velocity.x *= sprint_multiplier
         self.velocity.z *= sprint_multiplier
     
     # Jump logic
-    if Input.is_action_just_pressed("jump") and is_on_floor():
+    if Input.is_action_just_pressed("jump") and is_on_floor(): # if Space is pressed and the player is grounded
         self.velocity.y = jump_velocity
     
     # Gravity
@@ -94,11 +96,8 @@ func _physics_process(delta: float) -> void:  # Fixed method name
         if respawn_point:
             self.position = respawn_point.global_position
 
-
-func _input(event: InputEvent) -> void:
-    pass
-
 func _unhandled_input(event: InputEvent) -> void:  # Fixed method name
+    # use mouse motion to rotate the camera
     if event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
         twist_input = -event.relative.x * mouse_sensitivity
         pitch_input = -event.relative.y * mouse_sensitivity
