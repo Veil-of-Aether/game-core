@@ -15,6 +15,7 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 extends Control
+signal pause
 
 var _is_paused := false:
     set = set_paused
@@ -43,6 +44,7 @@ func set_paused(value: bool):
     _is_paused = value
     get_tree().paused = _is_paused
     self.visible = _is_paused
+    $Map.set_visible(false)
     $GridContainer/ResumeBtn.grab_focus()
 
 # if the 'Resume' button is pressed
@@ -61,3 +63,6 @@ func _on_settings_btn_pressed() -> void:
 func _on_quit_btn_pressed() -> void:
     get_tree().paused = false
     get_tree().change_scene_to_file("res://Scenes/title_screen.tscn")
+
+func _on_pause() -> void:
+    _is_paused = !_is_paused
