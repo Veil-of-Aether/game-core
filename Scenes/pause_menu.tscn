@@ -71,6 +71,7 @@ text = "Quit to title"
 visible = false
 layout_mode = 1
 
+[connection signal="pause" from="." to="." method="_on_pause"]
 [connection signal="pressed" from="GridContainer/ResumeBtn" to="." method="_on_resume_btn_pressed"]
 [connection signal="pressed" from="GridContainer/MapBtn" to="." method="_on_map_btn_pressed"]
 [connection signal="pressed" from="GridContainer/SettingsBtn" to="." method="_on_settings_btn_pressed"]

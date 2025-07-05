@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://564522mqn86f"]
+[gd_scene load_steps=3 format=3 uid="uid://564522mqn86f"]
 
 [ext_resource type="Script" uid="uid://cxg8ashe27yqk" path="res://Scripts/map.gd" id="1_ci6au"]
+[ext_resource type="Texture2D" uid="uid://ctysoips8abn2" path="res://Sprites/Minimap/player-marker.png" id="2_26yhd"]
 
 [node name="Map" type="Control"]
 layout_mode = 3
@@ -21,5 +22,11 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.156863, 0.156863, 0.156863, 1)
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="MapScreen" type="Camera2D" parent="."]
 anchor_mode = 0
+
+[node name="PlayerMarker" type="Sprite2D" parent="."]
+position = Vector2(0, 5)
+rotation = 1.5708
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_26yhd")

@@ -17,6 +17,7 @@
 extends CharacterBody3D
 class_name Player
 
+# various variables 
 var mouse_sensitivity := 0.001
 var controller_sensitivity := 1.0
 var twist_input := 0.0
@@ -27,11 +28,13 @@ var jump_velocity := 5.0
 var is_third_person := true
 var pitch_limit := 30
 var y_limit = -25
+var rotation_speed := 5.0
 # variables related to the current camera in use
 @onready var twist_pivot := $TwistPivotTP
 @onready var pitch_pivot := $TwistPivotTP/PitchPivotTP
 @onready var camera := $TwistPivotTP/PitchPivotTP/CameraTP
 @onready var crosshair := $GUI/Crosshair
+@onready var player_model = $CollisionShape3D
 
 func _ready() -> void:
     # hide the mouse
@@ -56,6 +59,14 @@ func _physics_process(delta: float) -> void:
     # Transform direction into world space relative to pivot
     var direction: Vector3 = twist_pivot.basis * input_dir
     direction.y = 0  # Prevent flying
+    
+    # Rotate player to face movement direction
+    if direction.length() > 0.01:
+        var target_rotation = atan2(-direction.x, -direction.z)
+        var current_rotation = player_model.rotation.y
+        var new_rotation = lerp_angle(current_rotation, target_rotation, rotation_speed * delta)
+        player_model.rotation.y = new_rotation
+
     
     # Apply movement
     self.velocity.x = direction.x * move_speed
