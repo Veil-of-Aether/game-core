@@ -13,8 +13,17 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ci6au")
 
-[node name="ColorRect" type="ColorRect" parent="."]
-layout_mode = 1
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+layout_mode = 0
+offset_right = 2000.0
+offset_bottom = 2000.0
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+size = Vector2i(2000, 2000)
+
+[node name="Root" type="Node2D" parent="SubViewportContainer/SubViewport"]
+
+[node name="ColorRect" type="ColorRect" parent="SubViewportContainer/SubViewport/Root"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -22,11 +31,17 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.156863, 0.156863, 0.156863, 1)
 
-[node name="MapScreen" type="Camera2D" parent="."]
-anchor_mode = 0
-
-[node name="PlayerMarker" type="Sprite2D" parent="."]
+[node name="PlayerMarker" type="Sprite2D" parent="SubViewportContainer/SubViewport/Root"]
 position = Vector2(0, 5)
 rotation = 1.5708
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("2_26yhd")
+
+[node name="MapScreen" type="Camera2D" parent="SubViewportContainer/SubViewport/Root"]
+position = Vector2(0, 4.76837e-07)
+scale = Vector2(1, 1)
+anchor_mode = 0
+limit_left = 0
+limit_top = 0
+limit_right = 2000
+limit_bottom = 2000
