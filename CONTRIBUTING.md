@@ -53,18 +53,17 @@ Please note that this guide expects you to be at least somewhat familiar with bo
 1. **Fork** the repository
 2. **Clone** your repository onto you local machine
   ```bash
-    git clone git@github.com:yourname/yourrepo
+  git clone git@github.com:yourname/yourrepo
 3. **Create a new branch** for your contribution
   - choose a descriptive name for your branch
   ```bash
-    git checkout -b yourbranchname
+  git checkout -b yourbranchname
 3. **Make your changes**, following the style guide below.
   - make any necessary changes using whatever tools are necessary
 4. **Commit** your changes with a clear, descriptive message:
    ```bash
-    git commit -m "a short description of changes"
-
-    git push
+   git commit -m "a short description of changes"
+   git push
 5. **Create a pull request** to the main repository. Be sure to explain what your changes do and why they are necessary.
   - Write a descriptive summary of your changes before submitting your pull request
 
