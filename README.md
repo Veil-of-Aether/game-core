@@ -3,7 +3,7 @@
 ## About
 *The Veil of Aether* is a free and open-source (FOSS) action-adventure RPG. It is based in the fictional land of Neyvara, a world focused on the four elements of Earth, Fire, Wind, and Water. The protagonist of the game is Darian (the player), a young adult who sets out on an epic adventure to save the world from an evil sorcerer. He must fight through trials and dungeons to reach the final climactic battle.
 
-This repository contains the lore. If you don't know what something referenced is, chances are you'll find it somewhere in the repository. Our plan is to link names of things to their corresponding documents, but that isn't a particularly small task.
+This repository contains the game's code and is also the center for general issues and discussions.
 
 ## Our mission statement
 
@@ -23,10 +23,10 @@ The files here are licensed under the [GNU General Public License v3.0](LICENSE)
 This project is powered by the community and motivated by passion. Here are some ways that you can be a part of it:
 
 - Give Feedback  
-If you find a bug or inconsistency, or simply have a suggestion for a feature, please visit the [issues page](https://github.com/Veil-of-Aether/worldbuilding/issues). Do a search and see if anyone else has opened a similar issue. If not, feel free to open your own.
+If you find a bug or inconsistency, or simply have a suggestion for a feature, please visit the [issues page](https://github.com/Veil-of-Aether/game-core/issues). Do a search and see if anyone else has opened a similar issue. If not, feel free to open your own.
 
-- Contribute  Assets  
-If you can write descriptions for players, locations, or similar things, you can help! We greatly appreciate any contributions you can make. For more information on this, please join our [Revolt server](https://rvlt.gg/xa5z1G8d) or contact a maintainer.
+- Contribute  Code 
+If you know how to code using Godot, or create character models in Blender, you can help! We greatly appreciate any contributions you can make. For more information on this, please join our [Revolt server](https://rvlt.gg/xa5z1G8d) or contact a maintainer.
 
 - Support Development  
 If this project stands out to you but you don't know how else to help, you can always support us monetarily. We greatly appreciate donations to help cover our costs. Please contact a maintainer for more details. We plan to have an Open Collective page soon, but that is still being worked on.
