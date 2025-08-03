@@ -3,92 +3,50 @@
 ## About
 *The Veil of Aether* is a free and open-source (FOSS) action-adventure RPG. It is based in the fictional land of Neyvara, a world focused on the four elements of Earth, Fire, Wind, and Water. The protagonist of the game is Darian (the player), a young adult who sets out on an epic adventure to save the world from an evil sorcerer. He must fight through trials and dungeons to reach the final climactic battle.
 
-This repository contains the code and assets for the game. Please note that this repository is not going to be as active as the others for now, as we want to establish lore and some concept art before we begin coding to much. This is to prevent having to delete large amounts of code.
+This repository contains the game's code and is also the center for general issues and discussions.
 
 ## Our mission statement
 
-Our mission statement
+A free and open-source RPG, powered by passion rather than profit
 
-A free and open-source RPG, powered by passion—not profit.
+We strive to be different than corporate games, and here's how:
+- 100% free/libre and open source code and assets
+- Zero dependence on corporate tools or programs
+- Built and maintained by the community
 
-We're building a community-driven adventure inspired by classics like The Legend of Zelda, but without the corporate strings. No ads, no shady data collection, no paywalls. Just creativity, collaboration, and code.
-
-### What makes us different?
-- 100% Free/Libre and Open Source (GPL code, CC-BY-SA assets)
-- Zero reliance on corporate tools outside of required platform distribution
-- Active community engagement—from quests to code to music
-- OSS tools we use get credit and donations where possible
-
-This isn't just a game—it's a statement.
-
-Join us. Build with us. Shape the world.
 
 ## License
-This game is licensed under the [GNU General Public License v3.0](LICENSE). Please adhere to the guidlines outlined here when modifying or redistributing the game.
+The files here are licensed under the [GNU General Public License v3.0](LICENSE). Please adhere to the guidlines outlined here when modifying or redistributing the documents.
 
 ## How you can help
 
-This project is powered by passion, free software, and community contributions — and there are many ways *you* can be part of it:
+This project is powered by the community and motivated by passion. Here are some ways that you can be a part of it:
 
-- 📝 Give Feedback  
-Got an idea to improve the game? Found a bug? Head over to our Git repo's [issues page](https://github.com/Veil-of-Aether/game-core/issues) to file it. We monitor it regularly and appreciate all input!
+- Give Feedback  
+If you find a bug or inconsistency, or simply have a suggestion for a feature, please visit the [issues page](https://github.com/Veil-of-Aether/game-core/issues). Do a search and see if anyone else has opened a similar issue. If not, feel free to open your own.
 
-- 🛠️ Contribute Code or Assets  
-Developers, artists, and audio wizards — your skills are welcome! Fork the repo, make your improvements, and send a pull request. We'll review and credit all contributors properly.
+- Contribute  Code 
+If you know how to code using Godot, or create character models in Blender, you can help! We greatly appreciate any contributions you can make. For more information on this, please join our [Revolt server](https://rvlt.gg/xa5z1G8d) or contact a maintainer.
 
-- 💸 Support Development  
-If you believe in what we're building, you can help cover server costs and support the tools we rely on through donations. A portion goes to upstream projects like Godot, Disroot, and Revolt.
+- Support Development  
+If this project stands out to you but you don't know how else to help, you can always support us monetarily. We greatly appreciate donations to help cover our costs. Please contact a maintainer for more details. We plan to have an Open Collective page soon, but that is still being worked on.
 
-- 📣 Spread the Word  
-Tell your friends, boost us on the Fediverse, share the repo — anything helps! The more people we reach, the more awesome contributors and players we'll find.
-
-Please see [Contributuing](#contributing) for more information.
-
-Together, we can show that great games don't need ads, tracking, DRM, or a corporate logo.
+- Spread the Word  
+Even if you can't help in any of the above ways, one of the best ways to contribute is to simply spread the word. Make a post on the FediVerse or just tell your friends about the game. This is a great way to bring in more players and contributors.
 
 ## Contributing
 
-First off, thanks for your interest in The Veil of Aether! Whether you're here to squash bugs, write dialogue, suggest features, or just share wild theories—we appreciate you.
+Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details on how you can contribute to the project.
 
-### Ways You Can Help
-There are lots of ways to contribute:
-
-- Report bugs: Found a glitch in the matrix (or the Wind Temple)? Open an issue.
-- Suggest features: Got an idea for a sidequest, spell, or secret area? Drop it in the Discussions or open a proposal.
-- Submit code: Programmers are welcome! Fixes, tools, and gameplay enhancements are all fair game.
-- Playtest and give feedback: Your gameplay notes help us balance, polish, and improve.
-- Spread the word: Share the project, join our Revolt server, or post about it in the Fediverse!
-
-### How to Contribute
-1. Fork the repo
-
-2. Create a new branch for your changes:
-  ```bash
-  git checkout -b feature/someWeirdFeature
-  ```
-  
-3. Make your changes and commit them with clear messages
-
-4. Push to your fork and open a pull request
-
-5. Wait for review and well get back to you ASAP!
-
-### Guidelines
-- Keep code clean, readable, and in snake_case.
-
-- Be respectful. This is a chill space for creators and players alike.
-
-- Large changes? Please open an issue or proposal first so we can discuss it.
-
-- Follow our [Code of Conduct](CODE_OF_CONDUCT.md)
-
-- By contributing, you agree that your code will be licensed under the [GNU GPLv3 License](LICENSE)
-
-### Community & Support
+## Community
 Need help? Got a cool idea? Join the community:
 
 - Revolt Server: https://rvlt.gg/xa5z1G8d
 
-- Fediverse: https://mastodon.social/@veilofaether
+- The Matrix: https://matrix.to/#/#veil-of-aether:matrix.org
+
+- Mastodon: https://mastodon.social/@veilofaether
+
+- Bluesky: https://bsky.app/profile/veilofaether.bsky.social
 
 - Issue Tracker: https://github.com/Veil-of-Aether/game-core/issues
