@@ -19,7 +19,9 @@ offset_right = 2000.0
 offset_bottom = 2000.0
 
 [node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+handle_input_locally = false
 size = Vector2i(2000, 2000)
+render_target_update_mode = 4
 
 [node name="Root" type="Node2D" parent="SubViewportContainer/SubViewport"]
 
@@ -39,7 +41,6 @@ texture = ExtResource("2_26yhd")
 
 [node name="MapScreen" type="Camera2D" parent="SubViewportContainer/SubViewport/Root"]
 position = Vector2(0, 4.76837e-07)
-scale = Vector2(1, 1)
 anchor_mode = 0
 limit_left = 0
 limit_top = 0

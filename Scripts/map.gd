@@ -15,22 +15,23 @@ func _ready() -> void:
     player_script = player.get_script()
     map_camera.make_current()
 
-func _process(delta: float) -> void:
-    # set the player icon's transform components
-
-    # position
-    var player_x = player.position.x + 1000
-    var player_y = player.position.z + 1000 # Z in 3D corresponds to Y in 2D
-    player_icon.position = Vector2(player_x, player_y)
+func _process(delta):
+    # --- Position ---
+    # Convert player’s 3D world position to minimap 2D position
+    var playerPos = player.global_transform.origin
+    var iconX = playerPos.x + 1000
+    var iconY = playerPos.z + 1000 # Z in 3D corresponds to Y in 2D
+    player_icon.position = Vector2(iconX, iconY)
     
-    # camera position
-    #var camera_x = clamp(player_icon.position.x, 0, 2000)
-    #var camera_y = clamp(player_icon.position.y, 0, 2000)
-    #map_camera.position = Vector2(camera_x, camera_y)
+    # --- Camera Clamping (optional, keeps camera within map bounds) ---
+    var camX = clamp(player_icon.position.x, 0, 2000)
+    var camY = clamp(player_icon.position.y, 0, 2000)
+    map_camera.position = Vector2(camX, camY)
     
-    # rotation
-    var player_rotation_y = player.camera.rotation.y
-    player_icon.rotation = -player_rotation_y # negated to match 2D clockwise rotation
+    # --- Rotation ---
+    # Match rotation of player’s camera
+    var camRotationY = player.camera.global_transform.basis.get_euler().y
+    player_icon.rotation = -camRotationY # Negate to match 2D clockwise rotation
 
 func _unhandled_input(event: InputEvent) -> void:
     if event.is_action_pressed("open_map"): # if the M key is pressed
@@ -43,7 +44,7 @@ func _unhandled_input(event: InputEvent) -> void:
 # render certain things in the world as icons
 func render_icons():
     pass
-            
+
 # exit the map screen to gameplay
 func close_map():
     self.set_visible(false)
