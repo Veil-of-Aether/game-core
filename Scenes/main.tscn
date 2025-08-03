@@ -1,6 +1,5 @@
-[gd_scene load_steps=15 format=3 uid="uid://b06320ou2rb4n"]
+[gd_scene load_steps=14 format=3 uid="uid://b06320ou2rb4n"]
 
-[ext_resource type="PackedScene" uid="uid://b0smd176vka81" path="res://Objects/mob.tscn" id="2_kry3j"]
 [ext_resource type="PackedScene" uid="uid://b2ponhhnurbry" path="res://Terrain/ground.glb" id="2_lquwl"]
 [ext_resource type="PackedScene" uid="uid://dgr5wumt58syk" path="res://Objects/player.tscn" id="3_7mycd"]
 [ext_resource type="Texture2D" uid="uid://ddkxol3jj1557" path="res://Sprites/Minimap/Border.png" id="3_jjvhh"]
@@ -87,9 +86,6 @@ environment = SubResource("Environment_mk5yb")
 
 [node name="Player" parent="." instance=ExtResource("3_7mycd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.6, 0)
-
-[node name="Mob" parent="." instance=ExtResource("2_kry3j")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.6486, 7.51106)
 
 [node name="RespawnPoint" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.6, 0)
