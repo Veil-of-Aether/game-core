@@ -93,4 +93,4 @@ This change allows the player to crouch using the shift key.
 
 ### License
 
-By contributing to ***The Veil of Aether*'s game core repository**, you agree that your contributions will be licensed under the [GNU General Public License v3.0](LICENSE).
+By contributing to ***The Veil of Aether*'s game core repository**, you agree that your contributions will be licensed under the [GNU General Public License v3.0 or later](LICENSE).
