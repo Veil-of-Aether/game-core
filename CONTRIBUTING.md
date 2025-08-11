@@ -31,14 +31,14 @@ see [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for more details. By participating 
 
 #### Reporting Problems
 
-If you encounter a problem or inconsistency, please check the [issues](https://github.com/Veil-of-Aether/game-core/issues) to see if it has already been reported. If not, you can report it by opening a new issue.
+If you encounter a problem or inconsistency, please check the [issues](https://gitlab.com/veil-of-aether/game-core/-/issues) to see if it has already been reported. If not, you can report it by opening a new issue.
 
 - Provide a **clear description** of the issue.
 - If applicable, explain how you would recommend it be fixed
 
 #### Suggesting Features
 
-We welcome suggestions for new features or game mechanics! If you have an idea, feel free to open a [new issue](https://github.com/Veil-of-Aether/game-core/issues) with a label that describes the feature you want.
+We welcome suggestions for new features or game mechanics! If you have an idea, feel free to open a [new issue](https://gitlab.com/veil-of-aether/game-core/-/issues) with a label that describes the feature you want.
 
 - Explain in detail what this feature is
 - Describe how the feature would add to gameplay
@@ -67,10 +67,10 @@ Please note that this guide expects you to be at least somewhat familiar with bo
    git commit -m "a short description of changes"
    git push
    ```
-5. **Create a pull request** to the main repository. Be sure to explain what your changes do and why they are necessary.
-  - Write a descriptive summary of your changes before submitting your pull request
+5. **Create a merge request** to the main repository. Be sure to explain what your changes do and why they are necessary.
+  - Write a descriptive summary of your changes before submitting your merge request
 
-A maintainer will review your pull request
+A maintainer will review your merge request
 
 ---
 
