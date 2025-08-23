@@ -48,7 +48,7 @@ We welcome suggestions for new features or game mechanics! If you have an idea, 
 
 We are happy to accept direct contributions! Here's how to get started:
 
-Please note that this guide expects you to be at least somewhat familiar with both Git and GitHub
+Please note that this guide expects you to be at least somewhat familiar with both Git and GitLab
 
 1. **Fork** the repository
 2. **Clone** your repository onto you local machine
