@@ -25,6 +25,10 @@ window/size/mode=2
 
 enabled=PackedStringArray()
 
+[global_group]
+
+mobs="Mobs that are capable of taking damage"
+
 [input]
 
 move_forward={

@@ -1,6 +1,7 @@
 extends CharacterBody3D
 
 var player = null
+var health := 100
 const SPEED = 3.0
 
 @export var player_path : NodePath
@@ -21,3 +22,10 @@ func _process(delta: float) -> void:
     self.velocity *= SPEED
     
     move_and_slide()    
+
+func take_damage(amount: int):
+    health -= amount
+    
+    # remove the mob from the scene if it's out of health
+    if health <= 0:
+        self.queue_free()
