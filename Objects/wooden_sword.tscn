@@ -13,3 +13,5 @@ script = ExtResource("1_58v5u")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
 shape = SubResource("BoxShape3D_rtj10")
 debug_color = Color(6.16074e-06, 0.597291, 0.715336, 0.42)
+
+[connection signal="area_entered" from="Area3D" to="." method="_on_hitbox_body_entered"]
