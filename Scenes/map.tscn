@@ -1,48 +1,39 @@
-[gd_scene load_steps=3 format=3 uid="uid://564522mqn86f"]
+[gd_scene load_steps=4 format=3 uid="uid://564522mqn86f"]
 
 [ext_resource type="Script" uid="uid://cxg8ashe27yqk" path="res://Scripts/map.gd" id="1_ci6au"]
 [ext_resource type="Texture2D" uid="uid://ctysoips8abn2" path="res://Sprites/Minimap/player-marker.png" id="2_26yhd"]
 
-[node name="Map" type="Control"]
-layout_mode = 3
-anchor_right = 1.042
-anchor_bottom = 1.852
-offset_right = -0.640137
-offset_bottom = -0.160156
-grow_horizontal = 2
-grow_vertical = 2
+[sub_resource type="TileSet" id="TileSet_26yhd"]
+
+[node name="Map" type="Node2D"]
 script = ExtResource("1_ci6au")
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="."]
-layout_mode = 0
+visible = false
 offset_right = 2000.0
 offset_bottom = 2000.0
 
 [node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
 handle_input_locally = false
 size = Vector2i(2000, 2000)
-render_target_update_mode = 4
+render_target_update_mode = 0
 
 [node name="Root" type="Node2D" parent="SubViewportContainer/SubViewport"]
 
-[node name="ColorRect" type="ColorRect" parent="SubViewportContainer/SubViewport/Root"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.156863, 0.156863, 0.156863, 1)
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_26yhd")
+format = 2
 
-[node name="PlayerMarker" type="Sprite2D" parent="SubViewportContainer/SubViewport/Root"]
-position = Vector2(0, 5)
-rotation = 1.5708
-scale = Vector2(0.2, 0.2)
-texture = ExtResource("2_26yhd")
-
-[node name="MapScreen" type="Camera2D" parent="SubViewportContainer/SubViewport/Root"]
+[node name="MapScreen" type="Camera2D" parent="."]
 position = Vector2(0, 4.76837e-07)
 anchor_mode = 0
 limit_left = 0
 limit_top = 0
 limit_right = 2000
 limit_bottom = 2000
+
+[node name="PlayerMarker" type="Sprite2D" parent="."]
+position = Vector2(0, 5)
+rotation = 1.5708
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_26yhd")

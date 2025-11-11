@@ -69,7 +69,6 @@ text = "Quit to title"
 
 [node name="Map" parent="." instance=ExtResource("2_k0w1u")]
 visible = false
-layout_mode = 1
 
 [connection signal="pause" from="." to="." method="_on_pause"]
 [connection signal="pressed" from="GridContainer/ResumeBtn" to="." method="_on_resume_btn_pressed"]
