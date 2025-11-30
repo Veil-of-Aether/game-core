@@ -84,10 +84,10 @@ data = PackedVector3Array(-347.266, 2.5626, 200, -350, 2.6577, 198.431, -347.266
 environment = SubResource("Environment_mk5yb")
 
 [node name="Player" parent="." instance=ExtResource("3_7mycd")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.6, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 17.15, 0)
 
 [node name="RespawnPoint" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.6, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 17.15, 0)
 
 [node name="GUI" type="CanvasLayer" parent="."]
 
@@ -128,7 +128,7 @@ shadow_enabled = true
 script = SubResource("GDScript_h2yge")
 
 [node name="Moon" type="Sprite3D" parent="DaylightCycle"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.35792, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.35792, -4365.96)
 pixel_size = 0.7
 texture = ExtResource("4_kry3j")
 script = ExtResource("5_21xkr")
@@ -138,6 +138,7 @@ moonDistance = 3000.0
 [node name="ground" parent="." instance=ExtResource("2_lquwl")]
 
 [node name="Landscape" parent="ground" index="0"]
+transform = Transform3D(5, 0, 0, 0, 10, 0, 0, 0, 9, 0, 0, 0)
 surface_material_override/0 = SubResource("StandardMaterial3D_l7s0s")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="ground/Landscape" index="0"]
