@@ -1,0 +1,7 @@
+{
+    "id": "example",
+    "name": "Example Item",
+    "lore": "This is a cool item that does something",
+    "sprite": "res://Sprites/example.png",
+    "model": "res://Models/example.glb"
+}
