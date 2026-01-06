@@ -18,6 +18,9 @@ config/icon="uid://2vrk063xqgrt"
 [autoload]
 
 SaveManager="*res://Scripts/manage_save_data.gd"
+BeehaveGlobalMetrics="*res://addons/beehave/metrics/beehave_global_metrics.gd"
+BeehaveGlobalDebugger="*res://addons/beehave/debug/global_debugger.gd"
+SimpleGrass="*res://addons/simplegrasstextured/singleton.tscn"
 
 [display]
 
@@ -27,11 +30,12 @@ window/size/mode=2
 
 [editor_plugins]
 
-enabled=PackedStringArray()
+enabled=PackedStringArray("res://addons/beehave/plugin.cfg", "res://addons/simplegrasstextured/plugin.cfg")
 
 [global_group]
 
 mobs="Mobs that are capable of taking damage"
+player=""
 
 [input]
 
