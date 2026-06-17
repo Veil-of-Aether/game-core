@@ -5,6 +5,7 @@ var player_script
 
 @onready var parent := self.get_parent() # the pause menu
 @onready var player_icon := $PlayerMarker # the icon that will represent the player on the map
+@onready var map_background := $Background
 @onready var map_camera := $MapScreen # camera to display to the screen
 
 func _ready() -> void:
@@ -13,6 +14,7 @@ func _ready() -> void:
     var root = self.get_parent().get_parent().get_parent()
     player = root.get_node("Player")
     player_script = player.get_script()
+    map_background.size = get_viewport_rect().size
     #map_camera.current = true
 
 func _process(delta):

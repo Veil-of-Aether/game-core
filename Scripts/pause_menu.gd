@@ -44,7 +44,8 @@ func set_paused(value: bool):
     _is_paused = value
     get_tree().paused = _is_paused
     self.visible = _is_paused
-    $Map.set_visible(false)
+    if not _is_paused:
+        $Map.set_visible(false)
     $GridContainer/ResumeBtn.grab_focus()
 
 # if the 'Resume' button is pressed
